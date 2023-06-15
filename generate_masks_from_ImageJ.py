@@ -1,3 +1,16 @@
+#!/usr/bin/env python3
+
+"""
+Script Name: find_scale.py
+Author: Stefan Herdy
+Date: 01.02.2023
+Description: 
+Read mask from ImageJ TIF-file and safe it as binary mask 
+
+Usage: 
+-  Set your data path and measure the scale of your images
+"""
+
 import os
 from PIL import Image
 import cv2
@@ -20,7 +33,7 @@ def save_mask(image_path):
     return mask
 
 # Define the path to the folder containing the images
-folder_path = './input_data/raw'
+folder_path = './data/'
 
 # Iterate through all files in the folder
 for filename in os.listdir(folder_path):
@@ -30,7 +43,7 @@ for filename in os.listdir(folder_path):
         image_path = os.path.join(folder_path, filename)
         # Execute the function on the image
         mask = save_mask(image_path)
-        cv2.imwrite('./input_data/mask/' + filename, mask)
+        cv2.imwrite('./mask/' + filename, mask)
         #cv2.imshow('test', mask)
         #cv2.waitKey(0) 
         #cv2.destroyAllWindows()
