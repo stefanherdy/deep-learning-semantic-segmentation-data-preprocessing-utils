@@ -16,7 +16,6 @@ Installation
 ```shell
 
 $ git clone https://github.com/stefanherdy/deep-learning-semantic-segmentation-data-preprocessing-utils.git
-$ cd your-repository
 ```
 # Usage
 
