@@ -2,7 +2,7 @@
 
 
 
-Some utils to preprocess images for semantic image segmentation and to download and preprocess the label masks.
+Some helper functions to preprocess images for semantic image segmentation and to download and preprocess the label masks.
 
 # Table of Contents
 
