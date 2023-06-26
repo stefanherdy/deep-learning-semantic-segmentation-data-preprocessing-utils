@@ -19,7 +19,7 @@ from roifile import roiread
 
 
 # Define the function to be executed on each image
-def save_mask(image_path):
+def extract_mask(image_path):
     mask = np.zeros((1080, 1920))
     for i ,roi in enumerate(roiread(image_path)):
         #print(roi)
@@ -42,7 +42,7 @@ for filename in os.listdir(folder_path):
         # Construct the full path to the image
         image_path = os.path.join(folder_path, filename)
         # Execute the function on the image
-        mask = save_mask(image_path)
+        mask = extract_mask(image_path)
         cv2.imwrite('./mask/' + filename, mask)
         #cv2.imshow('test', mask)
         #cv2.waitKey(0) 
