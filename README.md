@@ -23,4 +23,4 @@ The files in this repository can be used as standalone files. You can use single
 
 # License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. :copyright: 2021 Stefan Herdy
